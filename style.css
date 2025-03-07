@@ -1,0 +1,281 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e; /* Dark background */
+    color: #f4f4f4; /* Light text color */
+    font-size: large;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navigation Bar */
+nav {
+    background: #222; /* Darker background for contrast */
+    color: #fff;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    color: #77fff6; /* Highlight the name with a color */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #77fff6; /* Highlight color on hover */
+}
+
+/* Add an underline effect on hover */
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #77fff6;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+#hero {
+    background: #333;
+    color: #fff;
+    padding: 80px 0; /* Reduced padding */
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #77fff6; /* Navbar color theme */
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-text .btn {
+    background: #77fff6;
+    color: #1e1e1e; /* Dark text for contrast */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-text .btn:hover {
+    background: #5599ff; /* Change color on hover */
+}
+
+.hero-text .btn i {
+    font-size: 18px;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #77fff6; /* Navbar color theme */
+}
+
+/* Sections */
+section {
+    padding: 40px 0; /* Reduced padding */
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 15px; /* Reduced margin */
+    color: #77fff6; /* Navbar color theme */
+}
+
+section p, section ul {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-10px);
+}
+
+.skill i {
+    font-size: 40px;
+    color: #77fff6; /* Navbar color theme */
+    margin-bottom: 10px;
+}
+
+.skill h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Experience Section */
+.experience-item {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.experience-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #77fff6; /* Navbar color theme */
+}
+
+.experience-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.experience-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+.project h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #77fff6; /* Navbar color theme */
+}
+
+.project ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Contact Section */
+#contact {
+    background: #333;
+    padding: 40px 0;
+}
+
+.contact-info {
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #77fff6;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #77fff6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
